@@ -1,0 +1,21 @@
+import * as types from '../containers/ActionTypes';
+
+export function addFriend(name) {
+    return {
+        type: types.ADD_FRIEND,
+    };
+}
+
+export function deleteFriend(id) {
+    return {
+        type: types.DELETE_FRIEND,
+        id
+    };
+}
+
+export function starFriend(id) {
+    return {
+        type: types.STAR_FRIEND,
+        id
+    };
+}
